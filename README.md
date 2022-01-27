@@ -1,16 +1,6 @@
+Circular menu for Jetpack Compose. Having many settings for animation.
+------
 
-<body>
-  <p>
-    <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/standart.gif" width="30%" height="30%"  />
-    <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/rotate.gif" width="30%" height="30%"  />
-    <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/color.gif" width="30%" height="30%"  />
-    <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/different.gif" width="30%" height="30%"  />
-    <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/duble.gif" width="30%" height="30%"  />
-    <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/duble2.gif" width="30%" height="30%"  />
-  </p>
- </body>
- 
- 
 Gradle
 ------
 gradle.settings
@@ -33,23 +23,114 @@ implementation 'com.github.kiselyv77:CircleMenu:V1.0'
 ```
 Usage
 ------
-standart sircle menu
+circle menu
+
+<img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/standart.gif" width="20%" height="20%" align="right" />
+
 ```kotlin
-Box(Modifier.fillMaxSize().padding(bottom = 40.dp) , contentAlignment = Alignment.Center){
+val buttonSpec = CircleMenuButtonSpec()
+val mainButtonSpec = CircleMenuMainButtonSpec()
+
+Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center){
         CircleMenu(
-            mainBotton = MainButtonCircle(imageVector = Icons.Default.Menu, onClick = {}),
+            mainBotton = MainButtonCircle(
+                imageVector = Icons.Default.Menu, 
+                onClick = {}, 
+                buttonsSpec = mainButtonSpec
+              ),
             buttons = listOf(
-                BottonCircle(imageVector = Icons.Default.Favorite, onClick = {}),
-                BottonCircle(imageVector = Icons.Default.Star, onClick = {}),
-                BottonCircle(imageVector = Icons.Default.Build, onClick = {}),
-                BottonCircle(imageVector = Icons.Default.AccountBox, onClick = {}),
-                BottonCircle(imageVector = Icons.Default.Call, onClick = {}),
-                BottonCircle(imageVector = Icons.Default.Settings, onClick = {}),
-                BottonCircle(imageVector = Icons.Default.Home, onClick = {}),
+                BottonCircle(imageVector = Icons.Default.Favorite, onClick = {}, buttonSpec),
+                BottonCircle(imageVector = Icons.Default.Star, onClick = {}, buttonSpec),
+                BottonCircle(imageVector = Icons.Default.Build, onClick = {}, buttonSpec),
+                BottonCircle(imageVector = Icons.Default.AccountBox, onClick = {}, buttonSpec),
+                BottonCircle(imageVector = Icons.Default.Call, onClick = {}, buttonSpec),
+                BottonCircle(imageVector = Icons.Default.Settings, onClick = {}, buttonSpec),
+                BottonCircle(imageVector = Icons.Default.Home, onClick = {}, buttonSpec),
             )
         )
     }
 ```
+
+add rotate circle menu
+
+<img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/rotate.gif" width="20%" height="20%" align="right" />
+
+```kotlin
+val buttonSpec = CircleMenuButtonSpec(
+        rotate = RotateButtonSpec(
+            openValue = 180f,
+            closeValue = 0f,
+            animationSpec = tween(durationMillis = 500)
+        )
+    )
+    val mainButtonSpec = CircleMenuMainButtonSpec(
+        rotate = RotateButtonSpec(
+            openValue = 180f,
+            closeValue = 0f,
+            animationSpec = tween(durationMillis = 500)
+        )
+    )
+```
+
+add color animate circle menu
+
+<img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/color.gif" width="20%" height="20%" align="right" />
+
+```kotlin
+val buttonSpec = CircleMenuButtonSpec(
+        color = ColorButtonSpec(
+            openValue = Color.Magenta,
+            closeValue = Color.Black,
+            animationSpec = tween(durationMillis = 500)
+        )
+    )
+    val mainButtonSpec = CircleMenuMainButtonSpec(
+        color = ColorButtonSpec(
+            openValue = Color.Magenta,
+            closeValue = Color.Black,
+            animationSpec = tween(durationMillis = 500)
+        )
+    )
+```
+
+use buttonSpec.copy() to create different buttons
+
+<img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/different.gif" width="20%" height="20%" align="right" />
+
+```kotlin
+
+    val buttonSpec = CircleMenuButtonSpec(
+        size = SizeButtonSpec(
+            openValue = 50.dp,
+            closeValue = 0.dp,
+            animationSpec = tween(durationMillis = 500)
+        ),
+        radius = RadiusButtonSpec(100f, 120f)
+    )
+    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center){
+        CircleMenu(
+                mainBotton = MainButtonCircle(
+                imageVector = Icons.Default.Menu, 
+                onClick = {}
+            ),
+            buttons = listOf(
+                BottonCircle(
+                        imageVector = Icons.Default.Favorite,
+                        onClick = {},
+                        bottonSpec = buttonSpec.copy(
+                            color = ColorButtonSpec(openValue = Color.Yellow)
+                        )
+                    ),
+                    BottonCircle(
+                        imageVector = Icons.Default.Star,
+                        onClick = {},
+                        bottonSpec = buttonSpec.copy(
+                            color = ColorButtonSpec(openValue = Color.Green)
+                        )
+                    )
+            )  
+```
+
 
 
 
