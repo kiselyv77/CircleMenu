@@ -17,3 +17,23 @@ dependencies {
 implementation 'com.github.kiselyv77:CircleMenu:V1.0'
 }
 ```
+
+Gradle
+------
+```kotlin
+Box(Modifier.fillMaxSize().padding(bottom = 40.dp) , contentAlignment = Alignment.Center){
+        CircleMenu(
+            mainBotton = MainButtonCircle(imageVector = Icons.Default.Menu, onClick = {}),
+            buttons = listOf(
+                BottonCircle(imageVector = Icons.Default.Favorite, onClick = {}),
+                BottonCircle(imageVector = Icons.Default.Star, onClick = {}),
+                BottonCircle(imageVector = Icons.Default.Build, onClick = {}),
+                BottonCircle(imageVector = Icons.Default.AccountBox, onClick = {}),
+                BottonCircle(imageVector = Icons.Default.Call, onClick = {}),
+                BottonCircle(imageVector = Icons.Default.Settings, onClick = {}),
+                BottonCircle(imageVector = Icons.Default.Home, onClick = {}),
+            )
+        )
+    }
+
+```
