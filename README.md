@@ -18,7 +18,7 @@ implementation 'com.github.kiselyv77:CircleMenu:V1.0'
 }
 ```
 
-Gradle
+Usage
 ------
 ```kotlin
 Box(Modifier.fillMaxSize().padding(bottom = 40.dp) , contentAlignment = Alignment.Center){
