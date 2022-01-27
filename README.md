@@ -1,3 +1,16 @@
+
+<body>
+  <p>
+    <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/standart.gif" width="30%" height="30%"  />
+    <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/rotate.gif" width="30%" height="30%"  />
+    <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/color.gif" width="30%" height="30%"  />
+    <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/different.gif" width="30%" height="30%"  />
+    <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/duble.gif" width="30%" height="30%"  />
+    <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/duble2.gif" width="30%" height="30%"  />
+  </p>
+ </body>
+ 
+ 
 Gradle
 ------
 gradle.settings
@@ -18,7 +31,6 @@ dependencies {
 implementation 'com.github.kiselyv77:CircleMenu:V1.0'
 }
 ```
-
 Usage
 ------
 standart sircle menu
@@ -37,5 +49,10 @@ Box(Modifier.fillMaxSize().padding(bottom = 40.dp) , contentAlignment = Alignmen
             )
         )
     }
-
 ```
+
+
+
+
+
+
