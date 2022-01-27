@@ -131,6 +131,15 @@ use buttonSpec.copy() to create different buttons
             )  
 ```
 
+you can combine settings and achieve different results
+
+<body>
+  <p>
+        <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/duble.gif" width="20%" height="20%" align="left" />
+        <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/duble2.gif" width="20%" height="20%" align="left" />
+  </p>
+ </body>
+
 
 
 
