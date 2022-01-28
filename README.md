@@ -1,5 +1,8 @@
-Circular menu for Jetpack Compose. Having many settings for animation.
-------
+<p align="center">
+ <img width="200px" src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/standart.gif"align="center"/>
+ <h2 align="center">Circular menu for Jetpack Compose.</h2>
+ <p align="center"><b>Having many settings for animation.</b></p>
+</p>
 
 Gradle
 ------
