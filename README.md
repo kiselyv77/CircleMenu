@@ -5,9 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://android-arsenal.com/details/1/5361">
     <img src="https://img.shields.io/badge/version-v1.0-blue" />
-  </a>
   <br />
 </p>
 
