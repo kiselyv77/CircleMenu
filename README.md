@@ -4,7 +4,14 @@
  <p align="center"><b>Having many settings for animation.</b></p>
 </p>
 
-Gradle
+<p align="center">
+  <a href="https://android-arsenal.com/details/1/5361">
+    <img src="https://img.shields.io/badge/version-v1.0-blue" />
+  </a>
+  <br />
+</p>
+
+🛠Gradle
 ------
 gradle.settings
 ```gradle
@@ -24,7 +31,7 @@ dependencies {
 implementation 'com.github.kiselyv77:CircleMenu:V1.0'
 }
 ```
-Usage
+💥Usage
 ------
 circle menu
 
@@ -133,15 +140,27 @@ use buttonSpec.copy() to create different buttons
                     )
             )  
 ```
-
 you can combine settings and achieve different results
 
 <body>
   <p>
-        <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/duble.gif" width="20%" height="20%" align="left" />
-        <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/duble2.gif" width="20%" height="20%" align="left" />
+        <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/duble.gif" width="20%" height="20%" align="center" />
+        <img src="https://github.com/kiselyv77/CircleMenu/blob/master/gif/duble2.gif" width="20%" height="20%" align="center" />
   </p>
  </body>
+ 
+ ## 🤝 License
+```
+The MIT License
+Copyright (c) 2016-2020 Mahach Imangazaliev
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
+ 
+ 
+ 
+
 
 
 
